@@ -1,0 +1,29 @@
+﻿@model Practical_6.Models.Product
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+</head>
+<body>
+
+    <h2>Product Details</h2>
+
+    <p><b>ID:</b> @Model.Id</p>
+
+    <p><b>Name:</b> @Model.Name</p>
+
+    <p><b>Description:</b> @Model.Description</p>
+
+    <p><b>Category:</b> @Model.Category</p>
+
+    <p><b>Price:</b> ₹@Model.Price</p>
+
+    <br />
+
+    <a href="@Url.Action("Index", "Product")">
+        Back to Products
+    </a>
+
+</body>
+</html>
